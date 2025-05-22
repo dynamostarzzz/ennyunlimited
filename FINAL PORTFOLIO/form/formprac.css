@@ -1,0 +1,123 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-color: black;
+    
+    
+}
+.login{
+    position: relative; 
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 22rem;
+    margin: 17rem auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  
+}
+.login h2{
+    text-align: center;
+    font-size: 40px;
+
+} 
+.input-group{
+    position: relative;
+    margin: 20px 0;
+}
+.input-group label{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    color: white;
+    left: 15px;
+    font-size: 18px;
+    pointer-events: none;
+    padding: 0 5px;
+    transition: .5s ;
+
+}
+.input-group input{
+    width: 90%;
+    height: 45px;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 1.2px solid white;
+    font-size: 18px;
+    padding: 0 12px;
+    border-radius: 6px;
+    outline:none;
+
+} */
+
+ 
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    background-color: rgb(31, 31, 31);
+    font-size: 15px;
+} 
+.login .conform{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.login form a{
+    color: white;
+}
+.login form button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    background-color: #ffff;
+    border: none;
+    font-size: large;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.login form p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.login::after, .login::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),
+    red,cyan,red,rgb(204, 0, 255),rgb(238, 255, 0),rgb(0, 255, 85));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 7px;
+    border-radius: 15px;
+    animation: 4s flex linear infinite;
+
+}
+.login::before{
+    filter: blur(2rem);
+    opacity: 0.7;
+}
+@keyframes flex {
+    from{
+        --angle:0deg
+    }
+    to{
+        --angle:360deg
+    }
+}

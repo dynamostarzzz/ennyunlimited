@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnnyUnlimited Portfolio</title>
+    <link rel="shortcut icon" href="assets/eu-logo-512.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 1rem;
+            /* text-align: center; */
+            /* margin-left: 2%; */
+        }
+
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #0f172a;
+            transition: 0.3s;
+            border-right: 2px solid;
+             padding-right: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            transition: ease-in-out;
+        }
+ main {
+      flex: 1;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      color: var(--blue);
+      margin: 0;
+    }
+
+    main p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      color: var(--black);
+    }
+     .btn-primary {
+      background: var(--blue);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: #002299;
+    }
+
+        .section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            column-gap: 10px;
+            display: flex;
+        }
+
+        
+        form input,
+        form textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+
+        form button {
+            background: #0f172a;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+        border-right: none;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}
+
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="assets/eu-logo-192.png" alt="">
+        <h1>EnnyUnlimited</h1>
+        <p>Frontend Developer | HTML • CSS • JavaScript</p>
+    </header>
+
+    <nav>
+        <a href="aboutme.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+   <main>
+     <main>
+    <h2>Welcome to my techspace.</h2>
+    <p>Welcome to my developer portfolio—a showcase of modern, responsive web projects built with precision, performance, and purpose. Every tool and feature here reflects a passion for clean code, smart design, and real-world usability.</p>
+
+    <a href="aboutme.html">
+      <button class="btn-primary">Explore➡️</button>
+    </a>
+  </main>
+   </main>
+
+     
+
+   
+  
+</body>
+
+</html>
